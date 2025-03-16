@@ -36,12 +36,12 @@ export const Contact: React.FC = () => {
           {/* Apresentação */}
           <div className="text-center md:text-left">
             {/* Título em Degradê */}
-            <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-4">
-              Contato
+            <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-4 uppercase">
+              Where to find me?
             </h2>
             {/* Texto de Apresentação */}
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Fique à vontade para entrar em contato comigo através das minhas redes sociais. Estou sempre aberta a novas oportunidades e conversas!
+              Contact me through my social media. I'm open to new opportunities and conversations!
             </p>
             {/* Botões de Redes Sociais */}
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">

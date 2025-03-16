@@ -5,26 +5,26 @@ export const Skills: React.FC = () => {
   const skills = [
     { name: "Python", level: 80 },
     { name: "ReactJS", level: 60 },
-    { name: "TypeScript", level: 50 },
+    { name: "TypeScript", level: 40 },
     { name: "UI/UX Design", level: 85 },
-    { name: "Segurança da Informação", level: 30 },
+    { name: "Segurança da Informação", level: 50 },
   ];
 
   // Lista de idiomas com seus níveis
   const languages = [
-    { name: "Português", level: "Nativo" },
-    { name: "Inglês", level: "B2" },
-    { name: "Espanhol", level: "B2" },
-    { name: "Francês", level: "A2" },
-    { name: "Italiano", level: "A2" },
-    { name: "Tailandês", level: "A1" },
+    { name: "Portuguese", level: "Nativo" },
+    { name: "English", level: "B2" },
+    { name: "Spanish", level: "B2" },
+    { name: "French", level: "A2" },
+    { name: "Italian", level: "A2" },
+    { name: "Thai", level: "A1" },
   ];
 
   return (
     <section id='skills' className="bg-[#1E293B] px-20 py-20">
       {/* Container */}
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-center mb-12 uppercase">
           My Skills
         </h2>
 

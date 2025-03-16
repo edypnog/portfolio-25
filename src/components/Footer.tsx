@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between text-gray-300">
         {/* Ano Atual */}
         <p className="text-sm">
-          &copy; {new Date().getFullYear()} Todos os direitos reservados.
+          &copy; {new Date().getFullYear()} All rights reserved.
         </p>
 
         {/* Link para o GitHub */}

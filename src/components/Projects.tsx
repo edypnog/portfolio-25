@@ -4,28 +4,22 @@ export const Projects: React.FC = () => {
   // Lista de projetos com nome, descrição, imagem e link
   const projects = [
     {
-      title: "Projeto 1",
-      description: "Tecnologias usadas: React, TypeScript, TailwindCSS.",
+      title: "Landing Page",
+      description: "React, TypeScript, TailwindCSS.",
       image: "https://www.sgstechnologies.net/sites/default/files/2021-08/future-webdesign.jpg", // Substitua pela URL da sua imagem
       link: "https://github.com/edypnog/landing-grafica", // Certifique-se de que o link é válido
     },
     {
-      title: "Projeto 2",
-      description: "Descrição breve do projeto 2. Tecnologias usadas: Node.js, Express, MongoDB.",
-      image: "https://www.sgstechnologies.net/sites/default/files/2021-08/future-webdesign.jpg", // Substitua pela URL da sua imagem
-      link: "https://github.com", // Certifique-se de que o link é válido
+      title: "Texas Bike (Mobile)",
+      description: "React Native, JavaScript",
+      image: "https://user-images.githubusercontent.com/73756874/222537477-0304a7c6-1f70-4f39-82b1-1b5b1c0c6fe4.png", // Substitua pela URL da sua imagem
+      link: "https://github.com/edypnog/texas-bike-rn", // Certifique-se de que o link é válido
     },
     {
-      title: "Projeto 3",
-      description: "Descrição breve do projeto 3. Tecnologias usadas: Figma, Adobe XD.",
-      image: "https://www.sgstechnologies.net/sites/default/files/2021-08/future-webdesign.jpg", // Substitua pela URL da sua imagem
-      link: "https://github.com", // Certifique-se de que o link é válido
-    },
-    {
-      title: "Projeto 4",
-      description: "Descrição breve do projeto 4. Tecnologias usadas: Python, Django, PostgreSQL.",
-      image: "https://www.sgstechnologies.net/sites/default/files/2021-08/future-webdesign.jpg", // Substitua pela URL da sua imagem
-      link: "https://github.com", // Certifique-se de que o link é válido
+      title: "Espaço Crochet",
+      description: "Figma, React, JavaScript",
+      image: "https://user-images.githubusercontent.com/73756874/220186979-2d7cdcca-ce4b-47ba-8db6-7a45f20a4609.png", // Substitua pela URL da sua imagem
+      link: "https://github.com/edypnog/espaco-crochet", // Certifique-se de que o link é válido
     },
   ];
 
@@ -35,7 +29,7 @@ export const Projects: React.FC = () => {
       <div className="container mx-auto px-6">
         {/* Título */}
         <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-center mb-12">
-          Meus Projetos
+          PROJECTS
         </h2>
 
         {/* Grid Layout */}
@@ -70,6 +64,17 @@ export const Projects: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+        {/* Botão "Click Here" */}
+        <div className="flex justify-center mt-12">
+          <a
+            href="https://github.com/edypnog" // Substitua pelo link do seu GitHub
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 bg-cyan-500 text-white font-semibold rounded-md hover:bg-cyan-600 transition"
+          >
+            Click here to see my GitHub projects
+          </a>
         </div>
       </div>
     </section>
