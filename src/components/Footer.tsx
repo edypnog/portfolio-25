@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
 
         {/* Link para o GitHub */}
         <p className="text-sm mt-2 md:mt-0">
-          made by{" "}
+        created with ❤️ by{" "}
           <a
             href="https://github.com/edypnog"
             target="_blank"

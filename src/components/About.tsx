@@ -8,11 +8,11 @@ export const AboutMe: React.FC = () => {
         {/* Box Branco */}
         <div className="bg-gray-100 rounded-lg shadow-md p-8 max-w-4xl flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-12">
           {/* Imagem Circular */}
-          <div className="relative w-40 h-40 md:w-96 md:h-28 m-5">
+          <div className="relative w-40 h-40">
             <img
               src="https://avatars.githubusercontent.com/u/73756874?v=4" // Substitua pela sua imagem
               alt="Foto de perfil"
-              className="w-full h-full rounded-full object-cover aspect-square border-4 border-dotted border-cyan-500"
+              className="w-full h-full rounded-full object-cover border-4 border-dotted border-cyan-500"
             />
           </div>
 
