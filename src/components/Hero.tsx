@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Navbar } from './Navbar';
+import './Hero.css';
 
 export const Hero: React.FC = () => {
   const roles = [
@@ -46,39 +48,34 @@ export const Hero: React.FC = () => {
   }, [currentRole, isDeleting, currentIndex, roles, typingSpeed]);
 
   return (
-    <div className="bg-[#1E293B] min-h-screen flex flex-col">
+    <div className="relative bg-[#1E293B] flex flex-col overflow-hidden">
+      {/* Fundo Animado */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+        <div className="absolute top-1/3 right-1/4 transform translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+        <div className="absolute bottom-1/4 left-1/3 transform -translate-x-1/2 translate-y-1/2 w-32 h-32 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-4000"></div>
+      </div>
+
       {/* Navbar */}
-      <nav className="container mx-auto px-6 py-4">
-        <div className="flex justify-between items-center">
-          <div className="text-white font-bold text-xl">edy<span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500'>pnog</span></div>
-          <div className="hidden md:flex space-x-6">
-            <a href="#about" className="text-gray-300 hover:text-white transition">
-              Sobre
-            </a>
-            <a href="#projects" className="text-gray-300 hover:text-white transition">
-              Projetos
-            </a>
-            <a href="#contact" className="text-gray-300 hover:text-white transition">
-              Contato
-            </a>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Content */}
-      <section className="container mx-auto px-6 py-20 flex flex-col justify-center">
+      <section className="container mx-auto px-6 py-20 flex flex-col items-center justify-center text-center relative z-10">
+        {/* Título Principal */}
         <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
           Olá, eu sou a{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
             Edy!
           </span>
         </h1>
+        {/* Texto com Efeito de Máquina de Escrever */}
         <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-2xl">
           <span key={currentIndex} className="relative inline-block">
             {currentRole}
             <span className="absolute right-0 top-0 text-gray-500 animate-blink">|</span>
           </span>
         </p>
+        {/* Botão */}
         <div className="mt-8">
           <a
             href="#projects"
