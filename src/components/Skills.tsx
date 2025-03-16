@@ -25,7 +25,7 @@ export const Skills: React.FC = () => {
       {/* Container */}
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 text-center mb-12">
-          Minhas Habilidades
+          My Skills
         </h2>
 
         {/* Grid Layout */}
@@ -48,7 +48,7 @@ export const Skills: React.FC = () => {
               </div>
             ))}
             <div className="mt-8">
-              <h3 className="text-xl font-semibold text-white mb-4">Idiomas</h3>
+              <h3 className="text-xl font-semibold text-white mb-4">Languages</h3>
               <div className="flex flex-wrap gap-2">
                 {languages.map((language, index) => (
                   <div

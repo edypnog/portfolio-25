@@ -8,23 +8,22 @@ export const AboutMe: React.FC = () => {
         {/* Box Branco */}
         <div className="bg-gray-100 rounded-lg shadow-md p-8 max-w-4xl flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
           {/* Imagem Circular */}
-          <div className="relative w-140 h-240">
+          <div className="relative w-40 h-40 md:w-60 md:h-60">
             <img
-              src="https://placehold.co/400x400/" // Substitua pela sua imagem
+              src="https://avatars.githubusercontent.com/u/73756874?v=4" // Substitua pela sua imagem
               alt="Foto de perfil"
-              className="w-full h-full rounded-full object-cover border-4 border-dotted border-cyan-500"
+              className="w-full h-full rounded-full object-cover aspect-square border-4 border-dotted border-cyan-500"
             />
           </div>
-
           {/* Apresentação */}
           <div className="text-center md:text-left">
             {/* Título em Degradê */}
             <h2 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 mb-4">
-              Sobre Mim
+              About Me
             </h2>
             {/* Texto de Apresentação */}
             <p className="text-gray-700 text-lg leading-relaxed">
-              Olá! Sou desenvolvedora de sistemas, websites e chatbots, além de designer e ilustradora. Meu objetivo é criar soluções inovadoras e experiências digitais incríveis. Trabalho com tecnologia para transformar ideias em realidade, sempre buscando a excelência nos detalhes.
+              Hello! I'm a software developer from Brazil with a love for creating web applications, chatbots, and visually captivating designs. I also enjoy drawing. Naturally curious and always eager to learn, I've taught myself programming and can understand and speak nearly six languages—all through self-study!
             </p>
           </div>
         </div>

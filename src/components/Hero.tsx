@@ -4,14 +4,12 @@ import './Hero.css';
 
 export const Hero: React.FC = () => {
   const roles = [
-    "Desenvolvedora de sistemas",
-    "Desenvolvedora de websites",
-    "Desenvolvedora de chatbots",
+    "Web Developer",
+    "Automation",
     "Designer",
-    "Ilustração",
-    "Tradução"
+    "Illustrator",
+    "Chatbots",
   ];
-
   const [currentRole, setCurrentRole] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -63,7 +61,7 @@ export const Hero: React.FC = () => {
       <section className="container mx-auto px-6 py-20 flex flex-col items-center justify-center text-center relative z-10">
         {/* Título Principal */}
         <h1 className="text-5xl md:text-6xl font-bold text-white leading-tight">
-          Olá, eu sou a{" "}
+          Hi, i'm{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
             Edy!
           </span>
@@ -81,7 +79,7 @@ export const Hero: React.FC = () => {
             href="#projects"
             className="inline-block px-6 py-3 bg-cyan-500 text-white font-semibold rounded-md shadow-md hover:bg-cyan-600 transition"
           >
-            Ver Projetos
+            See Projects
           </a>
         </div>
       </section>

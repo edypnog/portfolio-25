@@ -17,7 +17,7 @@ export const Navbar: React.FC = () => {
                 href="#about"
                 className="text-gray-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-500 transition"
             >
-                Sobre
+                About Me
             </a>
             <a
                 href="#skills"
@@ -29,13 +29,13 @@ export const Navbar: React.FC = () => {
                 href="#projects"
                 className="text-gray-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-500 transition"
             >
-                Projetos
+                Projects
             </a>
             <a
                 href="#contact"
                 className="text-gray-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-500 transition"
             >
-                Contato
+                Contact
             </a>
             </div>
 
@@ -70,21 +70,28 @@ export const Navbar: React.FC = () => {
                 className="block px-6 py-2 text-gray-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-500 transition"
                 onClick={() => setIsOpen(false)}
                 >
-                Sobre
+                About Me
+                </a>
+                <a
+                href="#skills"
+                className="block px-6 py-2 text-gray-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-500 transition"
+                onClick={() => setIsOpen(false)}
+                >
+                Skils
                 </a>
                 <a
                 href="#projects"
                 className="block px-6 py-2 text-gray-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-500 transition"
                 onClick={() => setIsOpen(false)}
                 >
-                Projetos
+                Projects
                 </a>
                 <a
                 href="#contact"
                 className="block px-6 py-2 text-gray-300 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-500 transition"
                 onClick={() => setIsOpen(false)}
                 >
-                Contato
+                Contact
                 </a>
             </div>
             )}

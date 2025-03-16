@@ -30,7 +30,7 @@ export const Projects: React.FC = () => {
   ];
 
   return (
-    <section className="bg-[#1E293B] py-20">
+    <section id='projects' className="bg-[#1E293B] py-20">
       {/* Container */}
       <div className="container mx-auto px-6">
         {/* Título */}
