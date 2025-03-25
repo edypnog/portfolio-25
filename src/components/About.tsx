@@ -1,6 +1,4 @@
-import React from "react";
-
-export const AboutMe: React.FC = () => {
+export const AboutMe = () => {
   return (
     <section id="about" className="bg-[#1E293B] py-20">
       {/* Container Centralizado */}

@@ -5,9 +5,10 @@ export const Skills: React.FC = () => {
   const skills = [
     { name: "Python", level: 80 },
     { name: "ReactJS", level: 60 },
-    { name: "TypeScript", level: 40 },
+    { name: "React Native", level: 40 },
+    { name: "Flutter", level: 50 },
     { name: "UI/UX Design", level: 85 },
-    { name: "Segurança da Informação", level: 50 },
+    { name: "Cyber Security", level: 50 },
   ];
 
   // Lista de idiomas com seus níveis
