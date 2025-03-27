@@ -16,7 +16,7 @@ export const Contact: React.FC = () => {
     },
     {
       name: "LinkedIn",
-      url: "https://www.linkedin.com/in/edypnog",
+      url: "https://www.linkedin.com/in/edynogueira",
       icon: faLinkedin,
     },
     {
